@@ -1,0 +1,17 @@
+import random
+def main ():
+    random_num = random.randint(1,10)
+    while True:
+        user_input = int(input("Guess a number from 1-10: "))
+        if user_input > random_num:
+            print("Too high")
+        elif user_input < random_num:
+            print("Too low")
+        elif user_input == random_num:
+            print("Correct")
+            print("Thank you for playing")
+            break
+
+
+if __name__ == "__main__":
+    main()
